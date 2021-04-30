@@ -65,9 +65,9 @@ WSGI_APPLICATION = 'betatrader.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'harmonic',
-        'USER': 'hprofit',
-        'PASSWORD': 'gerich20',
+        'NAME': 'betatrader',
+        'USER': 'betatrader',
+        'PASSWORD': '',
         'HOST': '',
         'PORT': '5432',
     }
