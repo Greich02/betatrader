@@ -1,0 +1,16 @@
+{% extends "preview.html"%}
+{% block action %}https://www.coinpayments.net/api.php{% endblock %}
+
+{% block hidden%}
+<input type="hidden" name="version" value="1">
+<input type="hidden" name="key" value="1trdgfxfsvx">
+<input type="hidden" name="cmd" value="create_transaction">
+<input type="hidden" name="buyer_email" value="{{user.email}}">
+<input type="hidden" name="merchant" value="606a89bb575311badf510a4a8b79a45e">
+<input type="hidden" name="currency1" value="USD">
+<input type="hidden" name="currency2" value="{{currency2}}">
+<input type="hidden" name="amount" value="{{user.amount}}">
+<input type="hidden" name="ipn_url" value="https://betatrader.ga/status">
+<input type=" hidden" name="cancel_url " value="https://betatrader.ga/fail">
+<input type="hidden" name="success_url" value="https://betatrader.ga/success">
+{% endblock %}

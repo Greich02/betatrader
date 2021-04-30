@@ -1,0 +1,52 @@
+{% extends 'dashboard/dashboardTemplate.html' %}
+{% block title %}Withdraw{% endblock %}
+{% block pageName %}Request withdraw{% endblock %}
+{% block pageStatus4 %}active{% endblock %}
+{% block content %}
+
+<div class="content">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card card-user">
+                <div class="card-header">
+                    <h5 class="card-title">Withdraw request</h5>
+                </div>
+                <div class="card-body">
+                    <form method="POST" action="withdraw_request">
+                        <div class="row">
+                            <div class="col-md-5 pr-1">
+                                <div class="form-group">
+                                    <label>Amount</label>
+                                    <input type="number" name="amount" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-3 px-1">
+                                <div class="form-group">
+                                    <label>Wallet or Account number</label>
+                                    <input type="text" name="wallet" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4 pl-1">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Payment method</label>
+                                    <select name="method" id="" class="form-control">
+                                        <option value="payeer">Payeer</option>
+                                        <option value="perfect_money">Perfect money</option>
+                                        <option value="cryptos">Cryptocurrencies</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="update ml-auto mr-auto">
+                                <button type="submit" class="btn btn-primary btn-round">Send request</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

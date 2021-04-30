@@ -1,0 +1,47 @@
+{% extends 'dashboard/dashboardTemplate.html' %}
+{% block title %}Login - Affiliate{% endblock %}
+{% block pageName %}Login{% endblock %}
+{% block sidebar %}{% endblock %}
+{% block content %}
+
+<div class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card card-user">
+                <div class="card-header">
+                    <h5 class="card-title">Login to dashboard</h5>
+                </div>
+                <div class="card-body">
+                    <form action="login" method="POST">
+                        {% csrf_token %}
+                        {% if error_message %}
+                        <p style="color: #ff0000;">{{ error_message }}</p>
+                        {% endif %}
+                        <div class="row">
+                            <div class="col-md-4 px-1">
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    {{form.email}}
+                                </div>
+                            </div>
+                            <div class="col-md-4 px-1">
+                                <div class="form-group">
+                                    <label>Password</label>
+                                    {{form.password}}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="update ml-auto mr-auto">
+                                <button type="submit" class="btn btn-primary btn-round">Login</button>
+                            </div>
+                        </div>
+                    </form>
+                    <a href="register">Create account</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

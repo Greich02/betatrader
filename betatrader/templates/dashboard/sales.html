@@ -1,0 +1,57 @@
+{% extends 'dashboard/dashboardTemplate.html' %}
+{% block title %}Sales{% endblock %}
+{% block pageName %}my sales{% endblock %}
+{% block pageStatus3 %}active{% endblock %}
+{% block content %}
+
+<div class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title"> My sales </h4>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead class=" text-primary">
+                                <th>
+                                    Email
+                                </th>
+                                <th>
+                                    Product
+                                </th>
+                                <th>
+                                    Commission
+                                </th>
+                                <th class="text-right">
+                                    Date
+                                </th>
+                            </thead>
+                            <tbody>
+                                {% for sale in sales %}
+                                <tr>
+                                    <td>
+                                        {{sale.email}}
+                                    </td>
+                                    <td>
+                                        {{sale.commission}}
+                                    </td>
+                                    <td>
+                                        {{sale.product}}
+                                    </td>
+                                    <td class="text-right">
+                                        {{sale.date}}
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

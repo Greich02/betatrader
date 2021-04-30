@@ -1,0 +1,65 @@
+{% extends 'dashboard/dashboardTemplate.html' %}
+{% block title %}Register - Affiliate{% endblock %}
+{% block pageName %}Register{% endblock %}
+{% block sidebar %}{% endblock %}
+{% block content %}
+
+<div class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card card-user">
+                <div class="card-header">
+                    <h5 class="card-title">Create Account</h5>
+                </div>
+                <div class="card-body">
+                    {% if error_message %}
+                    <p style="color: #ff0000;">{{ error_message }}</p>
+                    {% endif %}
+                    <form action="register" method="POST">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-md-6 pr-1">
+                                <div class="form-group">
+                                    <label>Your name</label>
+                                    <input type="text" name="name" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6 pr-1">
+                                <div class="form-group">
+                                    <label>Username</label>
+                                    <input type="text" name="username" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6 pr-1">
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" name="email" class="form-control" id="email" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6 px-1">
+                                <div class="form-group">
+                                    <label>Password</label>
+                                    <input type="password" name="password" class="form-control" id="password" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6 px-1">
+                                <div class="form-group">
+                                    <label>Confirm password</label>
+                                    <input type="password" name="confirm" class="form-control" id="confirm" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="update ml-auto mr-auto">
+                                <button type="submit" class="btn btn-primary btn-round">Register</button>
+                            </div>
+                        </div>
+                    </form>
+                    <a href="login">Already registered</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

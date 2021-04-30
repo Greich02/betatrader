@@ -1,0 +1,58 @@
+{% extends 'dashboard/dashboardTemplate.html' %}
+{% block title %}Coupons codes{% endblock %}
+{% block pageName %}Coupons codes list{% endblock %}
+{% block pageStatus2 %}active{% endblock %}
+{% block content %}
+
+<div class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title"> Available coupons</h4>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead class=" text-primary">
+                                <th>
+                                    Coupon code
+                                </th>
+                                <th>
+                                    Discount
+                                </th>
+                                <th>
+                                    Type of products
+                                </th>
+                                <th class="text-right">
+                                    Expire date
+                                </th>
+                            </thead>
+                            <tbody>
+                                {% for coupon in coupons %}
+                                <tr>
+                                    <td>
+                                        {{coupon.name}}
+                                    </td>
+                                    <td>
+                                        {{coupon.discount}}%
+                                    </td>
+                                    <td>
+                                        All products
+                                    </td>
+                                    <td class="text-right">
+                                        {{coupon.expireDate}}
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

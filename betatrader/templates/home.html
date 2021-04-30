@@ -1,0 +1,668 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <!--====== Title ======-->
+    <title>BetaTrader - Home</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% load static %}
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/png">
+
+    <!--====== Magnific Popup CSS ======-->
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+
+    <!--====== Slick CSS ======-->
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+
+    <!--====== Line Icons CSS ======-->
+    <link rel="stylesheet" href="{% static 'css/LineIcons.css' %}">
+
+    <!--====== Bootstrap CSS ======-->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+    <!--====== Default CSS ======-->
+    <link rel="stylesheet" href="{% static 'css/default.css' %}">
+
+    <!--====== Style CSS ======-->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <script type="text/javascript">
+        function populateRef() {
+            document.getElementById('ref').value = "{{r}}";
+        }
+    </script>
+</head>
+
+<body onload="populateRef()" ;>
+    <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+
+    <!--====== NAVBAR TWO PART START ======-->
+
+    <section class="navbar-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg">
+
+                        <a class="navbar-brand" href="/">
+                            <h2 class="logo" style="color: #fff;">BetaTrader</h2>
+                        </a>
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTwo"
+                            aria-controls="navbarTwo" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse sub-menu-bar" id="navbarTwo">
+                            <ul class="navbar-nav m-auto">
+                                <li class="nav-item active"><a class="page-scroll" href="#home">home</a></li>
+                                <li class="nav-item"><a class="page-scroll" href="#services">How it works</a></li>
+                                <li class="nav-item"><a class="page-scroll" href="#pricing">Pricing</a></li>
+                                <li class="nav-item"><a class="page-scroll" href="#contact">Purchase</a></li>
+                                <li class="nav-item"><a class="page-scroll" href="#about">faq</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="navbar-btn d-none d-sm-inline-block">
+                            <ul>
+                                <li><a class="solid" href="#contact">Get Started</a></li>
+                            </ul>
+                        </div>
+                    </nav> <!-- navbar -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== NAVBAR TWO PART ENDS ======-->
+
+    <!--====== SLIDER PART START ======-->
+
+    <section id="home" class="slider_area">
+        <div id="carouselThree" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselThree" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselThree" data-slide-to="1"></li>
+                <li data-target="#carouselThree" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="slider-content">
+                                    <h1 class="title">Automated trading bot.</h1>
+                                    <p class="text">Earn daily on Forex, commodity and cryptos market
+                                        without any knowledge or effort.
+                                    </p>
+                                    <ul class="slider-btn rounded-buttons">
+                                        <li><a class="main-btn rounded-one" href="#contact">GET STARTED</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> <!-- row -->
+                    </div> <!-- container -->
+                    <div class="slider-image-box d-none d-lg-flex align-items-end">
+                        <div class="slider-image">
+                        </div> <!-- slider-imgae -->
+                    </div> <!-- slider-imgae box -->
+                </div> <!-- carousel-item -->
+
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="slider-content">
+                                    <h1 class="title">Running 24/7 trading bot.</h1>
+                                    <p class="text">Don't miss anny profitable trade with our bots powered by a proven
+                                        strategy</p>
+                                    <ul class="slider-btn rounded-buttons">
+                                        <li><a class="main-btn rounded-one" href="#contact">GET STARTED</a></li>
+                                    </ul>
+                                </div> <!-- slider-content -->
+                            </div>
+                        </div> <!-- row -->
+                    </div> <!-- container -->
+                    <div class="slider-image-box d-none d-lg-flex align-items-end">
+                        <div class="slider-image">
+                        </div> <!-- slider-imgae -->
+                    </div> <!-- slider-imgae box -->
+                </div> <!-- carousel-item -->
+
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="slider-content">
+                                    <h1 class="title">Easy setup, Quick earning.</h1>
+                                    <p class="text">Our bots are the most reliable and user-friendly on the market. Just
+                                        some easy
+                                        steps and you are up for earning daily.</p>
+                                    <ul class="slider-btn rounded-buttons">
+                                        <li><a class="main-btn rounded-one" href="#contact">GET STARTED</a></li>
+                                    </ul>
+                                </div> <!-- slider-content -->
+                            </div>
+                        </div> <!-- row -->
+                    </div> <!-- container -->
+                    <div class="slider-image-box d-none d-lg-flex align-items-end">
+                        <div class="slider-image">
+                        </div> <!-- slider-imgae -->
+                    </div> <!-- slider-imgae box -->
+                </div> <!-- carousel-item -->
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselThree" role="button" data-slide="prev">
+                <i class="lni lni-arrow-left"></i>
+            </a>
+            <a class="carousel-control-next" href="#carouselThree" role="button" data-slide="next">
+                <i class="lni lni-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!--====== SLIDER PART ENDS ======-->
+
+    <!--====== FEATRES TWO PART START ======-->
+
+    <section id="services" class="features-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-10">
+                    <div class="section-title text-center pb-10">
+                        <h3 class="title">How it works</h3>
+                        <p class="text">Just follow these easy steps below and let our bots make you up to 25% on your
+                            investment monthly.</p>
+                    </div> <!-- row -->
+                </div>
+            </div> <!-- row -->
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-7 col-sm-9">
+                    <div class="single-features mt-40">
+                        <div class="features-title-icon d-flex justify-content-between">
+                            <h4 class="features-title"><a href="#">Purchase a bot</a></h4>
+                            <div class="features-icon">
+                                <i class="lni lni-credit-cards"></i>
+                                <img class="shape" src="{% static 'images/f-shape-1.svg' %}" alt="Shape">
+                            </div>
+                        </div>
+                        <div class="features-content">
+                            <p class="text">Get your bot just below the page. Choose the plan that suit you and get your
+                                order sent to your mailbox instantly.</p>
+                        </div>
+                    </div> <!-- single features -->
+                </div>
+                <div class="col-lg-4 col-md-7 col-sm-9">
+                    <div class="single-features mt-40">
+                        <div class="features-title-icon d-flex justify-content-between">
+                            <h4 class="features-title"><a href="#">Setup your bot.</a></h4>
+                            <div class="features-icon">
+                                <i class="lni lni-graph"></i>
+                                <img class="shape" src="{% static 'images/f-shape-1.svg' %}" alt="Shape">
+                            </div>
+                        </div>
+                        <div class="features-content">
+                            <p class="text">Follow the simple instructions sent with your order and setup your bot with
+                                an appropriate strategy and a $5 minimum deposit.</p>
+                        </div>
+                    </div> <!-- single features -->
+                </div>
+                <div class="col-lg-4 col-md-7 col-sm-9">
+                    <div class="single-features mt-40">
+                        <div class="features-title-icon d-flex justify-content-between">
+                            <h4 class="features-title"><a href="#">Start earning daily with no effort.</a></h4>
+                            <div class="features-icon">
+                                <i class="lni lni-target-revenue"></i>
+                                <img class="shape" src="{% static 'images/f-shape-1.svg' %}" alt="Shape">
+                            </div>
+                        </div>
+                        <div class="features-content">
+                            <p class="text">Our bot run the market daily and find the perfect opportunity for you
+                                folowing a proven and tested algorithm whiich enables you to earn up to 25% on your
+                                investment.</p>
+                        </div>
+                    </div> <!-- single features -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== FEATRES TWO PART ENDS ======-->
+
+    <!--====== PRINICNG START ======-->
+
+    <section id="pricing" class="pricing-area ">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-10">
+                    <div class="section-title text-center pb-25">
+                        <h3 class="title">Pricing Plans</h3>
+                        <p class="text">Our plans are designed to fit each type of investor and portofolio.</p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-7 col-sm-9">
+                    <div class="pricing-style mt-30">
+                        <div class="pricing-icon text-center">
+                            <img src="{% static 'images/enterprise.svg' %}" alt="">
+                        </div>
+                        <div class="pricing-header text-center">
+                            <h5 class="sub-title">Pro</h5>
+                            <p class="month"><span class="price">$ 499</span>/Lifetime</p>
+                        </div>
+                        <div class="pricing-list">
+                            <ul>
+                                <li><i class="lni lni-check-mark-circle"></i> Cryptos market</li>
+                                <li><i class="lni lni-check-mark-circle"></i> Indices</li>
+                                <li><i class="lni lni-check-mark-circle"></i> Forex market</li>
+                                <li><i class="lni lni-check-mark-circle"></i> Commodities</li>
+                                <li><i class="lni lni-check-mark-circle"></i> 24/7 Assistance</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-btn rounded-buttons text-center">
+                            <a class="main-btn rounded-one" href="#contact">GET STARTED</a>
+                        </div>
+                    </div> <!-- pricing style one -->
+                </div>
+
+                <div class="col-lg-4 col-md-7 col-sm-9">
+                    <div class="pricing-style mt-30">
+                        <div class="pricing-icon text-center">
+                            <img src="{% static 'images/pro.svg' %}" alt="">
+                        </div>
+                        <div class="pricing-header text-center">
+                            <h5 class="sub-title">Business</h5>
+                            <p class="month"><span class="price">$ 299</span>/Lifetime</p>
+                        </div>
+                        <div class="pricing-list">
+                            <ul>
+                                <li><i class="lni lni-check-mark-circle"></i> Forex market</li>
+                                <li><i class="lni lni-check-mark-circle"></i> Indices</li>
+                                <li><i class="lni lni-check-mark-circle"></i> Commodities</li>
+                                <s>
+                                    <li><i class="lni lni-check-mark-circle"></i> Cryptos market</li>
+                                </s>
+                                <li><i class="lni lni-check-mark-circle"></i> 24/7 Assistance</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-btn rounded-buttons text-center">
+                            <a class="main-btn rounded-one" href="#contact">GET STARTED</a>
+                        </div>
+                    </div> <!-- pricing style one -->
+                </div>
+
+                <div class="col-lg-4 col-md-7 col-sm-9">
+                    <div class="pricing-style mt-30">
+                        <div class="pricing-icon text-center">
+                            <img src="{% static 'images/basic.svg' %}" alt="">
+                        </div>
+                        <div class="pricing-header text-center">
+                            <h5 class="sub-title">Basic</h5>
+                            <p class="month"><span class="price">$ 149</span>/Lifetime</p>
+                        </div>
+                        <div class="pricing-list">
+                            <ul>
+                                <li><i class="lni lni-check-mark-circle"></i> Forex market</li>
+                                <li><i class="lni lni-check-mark-circle"></i> Indices</li>
+                                <s>
+                                    <li><i class="lni lni-check-mark-circle"></i> Commodities</li>
+                                </s>
+                                <s>
+                                    <li><i class="lni lni-check-mark-circle"></i> Cryptos market</li>
+                                </s>
+                                <s>
+                                    <li><i class="lni lni-check-mark-circle"></i> 24/7 Assistance</li>
+                                </s>
+                            </ul>
+                        </div>
+                        <div class="pricing-btn rounded-buttons text-center">
+                            <a class="main-btn rounded-one" href="#contact">GET STARTED</a>
+                        </div>
+                    </div> <!-- pricing style one -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== PRINICNG ENDS ======-->
+
+    <!--====== TESTIMONIAL PART START ======-->
+
+    <section id="testimonial" class="testimonial-area">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-xl-5 col-lg-6">
+                    <div class="testimonial-left-content mt-45">
+                        <h4 class="title">About Us</h4>
+                        <ul class="testimonial-line">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <p class="text">Our team is made of experienced traders working for either for their own account
+                            or for hedge funds and banks. We are also working with the bests developers to offer to our
+                            customers the best trading experience they could expect.</p><br>
+                    </div> <!-- testimonial left content -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+        <section id="testimonial" class="testimonial-area">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-12">
+                        <div class="testimonial-right-content mt-50">
+                            <div class="quota">
+                                <i class="lni lni-quotation"></i>
+                            </div>
+                            <div class="testimonial-content-wrapper testimonial-active">
+                                <div class="single-testimonial">
+                                    <img src="{% static 'images/author-1.PNG' %}" alt="author">
+                                </div> <!-- single testimonial -->
+                                <div class="single-testimonial">
+                                    <img src="{% static 'images/author-2.PNG' %}" alt="author">
+                                </div> <!-- single testimonial -->
+                                <div class="single-testimonial">
+                                    <img src="{% static 'images/author-3.PNG' %}" alt="author">
+                                </div> <!-- single testimonial -->
+                            </div> <!-- testimonial content wrapper -->
+                        </div> <!-- testimonial right content -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </section>
+    </section>
+
+    <!--====== TESTIMONIAL PART ENDS ======-->
+
+    <!--====== PROCEED TO CHECKOUT ======-->
+
+    <section id="contact" class="contact-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="contact-wrapper form-style-two pt-115">
+                        <h4 class="contact-title pb-10"><i class="lni lni-credit-cards"></i> Start <span>Earning
+                                Now.</span>
+                        </h4>
+
+                        <form id="contact-form" action="preview" method="post">
+                            {% csrf_token %}
+                            {% if message %}<p style="color : red;">
+                                {{message}}</p><br>
+                            {% endif%}
+                            {% if message2 %}<p style="color : red;">
+                                {{message2}}</p><br>
+                            {% endif%}
+                            {% if notification %}<p style="color : red;">
+                                {{notification}}</p><br>
+                            {% endif%}
+                            <div class="row"></div>
+                            <div class="col-md-6">
+                                <div class="form-input mt-25">
+                                    <label>Name</label>
+                                    <div class="input-items default">
+                                        <input name="name" type="text" placeholder="Name">
+                                        <i class="lni lni-user"></i>
+                                    </div>
+                                </div> <!-- form input -->
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-input mt-25">
+                                    <label>Email</label>
+                                    <div class="input-items default">
+                                        <input type="email" name="email" placeholder="Email">
+                                        <i class="lni lni-envelope"></i>
+                                    </div>
+                                </div> <!-- form input -->
+                            </div> <!-- form input -->
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-input mt-25">
+                            <label>
+                                <h5>Payment Method:</h5>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="radio" name="pmethod" value="Perfect Money" selected>
+                                <span>Perfect Money</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="pmethod" value="Payeer">
+                                <span>Payeer</span>
+                            </label>
+                            <label>
+                                <select name="currency2" id="currency2" class="form-control">
+                                    <option value="BTC">Bitcoin</option>
+                                    <option value="ETH">Ethereum</option>
+                                    <option value="DAI">DAI</option>
+                                    <option value="USDT">Tether</option>
+                                    <option value="BNB">BNB</option>
+                                    <option value="TRX">Tron</option>
+                                    <option value="LTC">Litecoin</option>
+                                    <input type="hidden" name="pmethod" value="Cryptocurrencies">
+                                </select>
+                            </label> <br>
+                            <div class=" col-md-6">
+                                <div class="form-input mt-25">
+                                    <label>
+                                        <h6>Choose plan </h6>
+                                    </label>
+                                </div>
+                                <label>
+                                    <div class="input-items default">
+                                        <select name="plan" id="plan" class="form-control">
+                                            <option value="Basic" selected>Basic</option>
+                                            <option value="Business">Busines</option>
+                                            <option value="Pro">Pro</option>
+                                        </select>
+                                    </div>
+                                </label>
+                            </div>
+                        </div> <!-- form input -->
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-input mt-25">
+                            <label>Coupon code</label>
+                            <div class="input-items default">
+                                <input type="coupon" name="coupon" placeholder="Coupon code">
+                                <i class="lni lni-offer"></i>
+                            </div>
+                        </div> <!-- form input -->
+                    </div>
+                    <input type="hidden" name="ref" id="ref">
+                    <p class="form-message"></p>
+                    <div class="col-md-12">
+                        <div class="form-input light-rounded-buttons mt-30">
+                            <button class="main-btn light-rounded-two">Preview Now</button>
+                        </div> <!-- form input -->
+                    </div>
+                </div> <!-- row -->
+                </form>
+            </div> <!-- contact wrapper form -->
+        </div>
+        </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== PROCEED TO CHECKOUT ======-->
+
+
+    <!--====== ABOUT PART START ======-->
+
+    <section id="about" class="about-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="faq-content mt-45">
+                        <div class="about-title">
+                            <h4 class="title">Frequently Asked Questions</h4>
+                        </div> <!-- faq title -->
+                        <div class="about-accordion">
+                            <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">How to get started?</a>
+                                    </div>
+
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <p class="text">Choose a plan and purchase your bot. You will get the
+                                                instructions sent with your order. Just follow them and start making
+                                                money.</p>
+                                        </div>
+                                    </div>
+                                </div> <!-- card -->
+                                <div class="card">
+                                    <div class="card-header" id="headingFive">
+                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseFive"
+                                            aria-expanded="false" aria-controls="collapseFive">Do I have to pay
+                                            monthly?</a>
+                                    </div>
+                                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <p class="text">No, every purchase are lifetime purchase. No monthly fees
+                                                are required.</p>
+                                        </div>
+                                    </div>
+                                </div> <!-- card -->
+                                <div class="card">
+                                    <div class="card-header" id="headingThree">
+                                        <a href="#" class="collapsed" data-toggle="collapse"
+                                            data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">Are your bots risk free?</a>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <p class="text">There's no risk free investment. But our bots have been
+                                                tested for long time and have proved until now their reliability.</p>
+                                        </div>
+                                    </div>
+                                </div> <!-- card -->
+                                <div class="card">
+                                    <div class="card-header" id="headingFore">
+                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseFore"
+                                            aria-expanded="false" aria-controls="collapseFore">How much can I earn?</a>
+                                    </div>
+                                    <div id="collapseFore" class="collapse" aria-labelledby="headingFore"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <p class="text">Profits depend on your investment and how much risk you
+                                                take. Our average customers earn usually about 25% on their investment.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div> <!-- card -->
+                            </div>
+                        </div> <!-- faq accordion -->
+                    </div> <!-- faq content -->
+                </div>
+                <div class="col-lg-7">
+                    <div class="about-image mt-50">
+                    </div> <!-- faq image -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== ABOUT PART ENDS ======-->
+
+    <!--====== FOOTER PART START ======-->
+
+    <section class="footer-area footer-dark">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="footer-logo text-center">
+                        <a class="mt-30" href="/"><img src="{% static 'images/logo.svg' %}" alt="Logo"></a>
+                    </div> <!-- footer logo -->
+                    <div class="footer-logo text-center">
+                        <a class="mt-30" href="register">Join affiliate program</a>
+                    </div>
+                    <ul class="social text-center mt-60">
+                        <li><a href="#"><i class="lni lni-telegram-filled"></i></a></li>
+                    </ul> <!-- social -->
+                    <div class="footer-support text-center">
+                        <span class="mail">support@betatrader.com</span>
+                    </div>
+                    <div class="copyright text-center mt-35">
+                        <p class="text">Powered by <a href="" rel="nofollow">Av.Inc</a>
+                    </div> <!--  copyright -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== FOOTER PART ENDS ======-->
+
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
+
+    <!--====== BACK TOP TOP PART ENDS ======-->
+
+    <!--====== PART START ======-->
+
+    <!--
+    <section class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+
+    <!--====== PART ENDS ======-->
+
+
+
+
+    <!--====== Jquery js ======-->
+    <script src="{% static 'js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'js/vendor/modernizr-3.7.1.min.js' %}"></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+    <!--====== Slick js ======-->
+    <script src="{% static 'js/slick.min.js' %}"></script>
+
+    <!--====== Magnific Popup js ======-->
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+
+
+    <!--====== Isotope js ======-->
+    <script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+
+    <!--====== Scrolling Nav js ======-->
+    <script src="{% static 'js/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'js/scrolling-nav.js' %}"></script>
+
+    <!--====== Main js ======-->
+    <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>
